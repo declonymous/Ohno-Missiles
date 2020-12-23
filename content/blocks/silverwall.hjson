@@ -1,0 +1,10 @@
+name: Silver Wall
+description: A wall made of silver. Not particularly useful or interesting.
+type: Wall
+health: 60000
+size: 2
+requirements: [
+  sand/1
+]
+category: defense
+research: electrum-drill
