@@ -16,32 +16,21 @@ recoil: 8
 shootSound: missilelaunch
 shootEffect: nuclearShockwave
 ammo: {
-    "sand":{
-        missile: {
-        type: MissileBulletType
-        bulletShrink: 0
-        speed: 5
-        damage: 15000
-        splashDamage: 3000
-        hitSize: 32
-        bulletWidth: 32
-        bulletHeight: 32
-        trailColor: F90800
-        ammoMultiplier: 3
-        homingPower: 0.1
-        frontColor: F90800
-        backColor: 565666
-        homingRange: 69420
-        splashDamageRadius: 48
-        hitSound: missileboom
-        knockback: 3
-        bulletSprite: ohno-missiles-missileblank
-        hitEffect: flakExplosionBig
-        lifetime: 3600
-        hitShake: 0.75
-     }
-  }
-}
+     "sand":{
+		"type": "MissileBulletType",
+		"speed": 5,
+		"lifetime": 100,
+		"collides": true,
+		"damage": 5,
+		"splashDamageRadius": 50,
+		"splashDamage": 15,
+		"homingRange": 20,
+		"homingPower": 2,
+		"pierce": true,"weaveScale": 5,
+		"weaveMag": 1.5,
+		"trailColor": missileYellowBack
+   }
+	},
 requirements: [
   copper/2
 ]
